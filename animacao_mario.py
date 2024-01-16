@@ -53,12 +53,19 @@ while run:
             if event.key == pygame.K_RIGHT:
                 action = 1
                 frame = 0
+                animation_cooldown = 500
             if event.key == pygame.K_UP:
                 action = 2
                 frame = 0
+                animation_cooldown = 500
+            if event.key == pygame.K_LEFT:
+                action = 1
+                frame = 0
+                animation_cooldown = 250
         else:
             action = 0
             frame = 0
+            animation_cooldown = 500
 
     pygame.display.update()
 
